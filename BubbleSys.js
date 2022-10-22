@@ -87,6 +87,7 @@ class BubbleSys {
                 let init_circle = true;
                 let break_circle = false;
                 if (this.circles[y][x] == true) {
+                    // A stronger/smoother glow effect can be achieved by adding more beginShape()'s here and endShape()'s inside the break_circle statement
                     beginShape();
                     while (true) {
                         if (break_circle == true) {
